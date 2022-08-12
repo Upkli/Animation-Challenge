@@ -1,0 +1,29 @@
+img{
+    width: 100px;
+    height: auto;
+    margin: 5%;
+    color: black;
+    
+}
+ /* The animation code */
+ @keyframes animatedimg {
+    0%   {transform: rotate(0deg);
+          border-radius: 0%;
+          filter: hue-rotate(0deg);}
+    25%  {transform: rotate(90deg);
+          border-radius: 25%;
+          filter: hue-rotate(90deg);}
+    50%  {transform: rotate(180deg);
+          border-radius: 50%;
+          filter: hue-rotate(180deg);}
+    100% {transform: rotate(360deg);
+          filter: hue-rotate(360deg);}
+    
+  }
+  
+  /* The element to apply the animation to */
+ :hover img{
+    animation-name: animatedimg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
